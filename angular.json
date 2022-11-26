@@ -28,7 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "./node_modules/primeng/resources/primeng.css",
+              "./node_modules/primeflex/primeflex.css"
             ],
             "scripts": []
           },
@@ -96,12 +101,23 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "./node_modules/primeng/resources/primeng.css",
+              "./node_modules/primeflex/primeflex.css"
+              
+
+
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "e91ad6a9-edfa-41c2-a63b-e513b6f375d8"
   }
 }

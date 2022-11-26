@@ -1,0 +1,22 @@
+// banner.component.scss
+.banner {
+    background-color: #0e5ea2;
+    height:70px;
+
+  }
+
+   h1{
+color:white;
+    text-align:center;
+    padding-top:15px;
+   }
+
+   .img {
+    float:left;
+    width: auto;
+            height: inherit;
+            object-fit: contain;
+            position: relative;
+            border: 2px solid black;
+  
+   }

@@ -1,0 +1,81 @@
+
+  <!-- register.component.html -->
+  <p-card>
+
+    <form   #myForm = "ngForm" (ngSubmit)="onSubmit">
+    <div class="form-group">
+      <label for="firstName" class="block">First Name</label>
+    <input type="text" pInputText [(ngModel)]="us.firstName" [class.is-invalid]="fname.invalid && fname.touched" name="firstName" #fname="ngModel" class="form-control" required placeholder="First Name" >
+    <small [class.d-none]="fname.valid || fname.untouched">firstname is required</small> 
+    </div>
+  
+    
+    <div class="form-group">   
+      <label for="lastName" class="block">Last Name</label>
+    <input type="text" pInputText [(ngModel)]="us.lastName" [class.is-invalid]="lname.invalid && lname.touched" name="lastName" #lname="ngModel" class="form-control" required  placeholder="Last Name"> 
+    <small [class.d-none]="lname.valid || lname.untouched">lastname is required</small> 
+
+    </div>
+  
+    <div class="form-group">
+      <label for="email" class="block">Email</label>
+    <input type="text" [class.is-invalid]="email.invalid && email.touched" pInputText [(ngModel)]="us.emailId" name="email" #email="ngModel" class="form-control" required placeholder="Email"> 
+    <small [class.d-none]="email.valid || email.untouched">email is required</small> 
+    </div>
+    
+  
+    <div class="form-group">
+      <label for="password">Password</label>
+      <p-password type="password" [(ngModel)]="us.password"  [class.is-invalid]="pass.invalid && pass.touched" name="password"  #pass="ngModel" class="form-control" required placeholder="Password"></p-password>
+      <small [class.d-none]="pass.valid || pass.untouched">password is required</small> 
+
+    </div>
+  
+    
+    <div class="form-group">
+    <label for="address" > Address</label>
+      <textarea [(ngModel)]="value5" type="address" class="form-control" id="float-input" rows="1.7" cols="22" pInputTextarea></textarea>
+    </div>
+  
+    <div class="form-group">
+    <label for="phone">Phone Number</label>
+          <p-inputNumber [(ngModel)]="value6" type="Number" class="form-control" mode="decimal" inputId="withoutgrouping" [useGrouping]="false"></p-inputNumber>
+    </div>
+      
+      <div class="form-group">
+      <label for="dob">Date Of Birth</label>
+          <p-calendar type="Date" inputId="date" [(ngModel)]="value10" class="form-control"></p-calendar>
+      </div>
+  
+         <div class="form-group">
+         <div class="p-col-1">
+         <label for="gender">Gender</label>
+         <p-radioButton name="gender" value="Male" [(ngModel)]="value7" inputId="gender" ></p-radioButton>
+         <label for="gender">Male</label>
+       <p-radioButton name="city" value="Female" [(ngModel)]="value7" inputId="city2"  ></p-radioButton>
+         <label for="gender">Female</label>
+       </div>
+       </div>
+  
+  <div class="form-group">
+  <label for="caste">Caste</label>
+    <p-dropdown [options]="castes" [(ngModel)]="value8" placeholder="Select a caste" optionLabel="name" class="form-control" [showClear]="true" ></p-dropdown>
+  </div>
+  
+  <div class="form-group">
+  <label for="religion">Religion</label>
+  
+    <p-dropdown [options]="religions" [(ngModel)]="value9" placeholder="Select a religion" optionLabel="name" class="form-control" [showClear]="true"></p-dropdown>
+  </div>
+  
+  <div class="form-group">
+  <label for="photo">Add Photo</label>
+  <p-fileUpload #fubauto mode="basic" name="demo[]" url="./upload.php" accept="image/*" class="form-control"  [auto]="true" chooseLabel="Browse"></p-fileUpload>
+  </div>
+  
+  <div>
+  <p-button [disabled]="myForm.form.invalid" (click) = "onSubmit()" label="Submit"></p-button>
+  </div>
+</form>
+  </p-card>
+  
