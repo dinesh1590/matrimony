@@ -2,12 +2,14 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BannerComponent } from './banner/banner.component';
+import { DisplayCustomerComponent } from './display-customer/display-customer.component';
 import { DisplayComponent } from './display/display.component';
 import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
+import { NewformComponent } from './newform/newform.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { RegisterComponent } from './register/register.component';
-import { SearchComponent } from './search/search.component';
+import { ViewComponent } from './view/view.component';
 
 
 const routes: Routes = [
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path:'display',component: DisplayComponent},
   {path:'form',component: FormComponent},
   {path:'banner',component: BannerComponent},
-  {path:'search',component:SearchComponent},
+  {path:'customerlist',component: DisplayCustomerComponent},
+  {path:'newform',component: NewformComponent},
+  {path:'view',component: ViewComponent},
   {path:'',redirectTo:'/home', pathMatch:'full'},
   {path:'**',component:NotFoundComponent},
 ];

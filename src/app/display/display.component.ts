@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserService } from '../user.service';
 import { Usr } from '../usr';
 
@@ -7,6 +8,7 @@ import { Usr } from '../usr';
   templateUrl: './display.component.html',
   styleUrls: ['./display.component.scss']
 })
+
 export class DisplayComponent implements OnInit {
 
   public data:Usr;
@@ -15,7 +17,7 @@ export class DisplayComponent implements OnInit {
 
 
 
-  constructor(private _usr:UserService) {
+  constructor(private _usr:UserService,private router: Router) {
     
    }
 
@@ -24,13 +26,25 @@ export class DisplayComponent implements OnInit {
  this.getEmployees();
   }
 
+
+
+
+
   private getEmployees() {
     this._usr.getEmployeesList().subscribe(data => {this.user=data});
 
     this.data=this._usr.hh;
   }
 
-  fuc() {
-    console.log(this.data);
-  }
+
+
+  employees: Usr[];
+
+
+update() {
+  this.router.navigate(['/ghg']);
 }
+
+
+}
+

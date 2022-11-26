@@ -1,9 +1,6 @@
-<h1>hello</h1>
 
 
-<button (click)="fuc()" >touch me</button>
-
-<div class="row">
+<!-- <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-12 col-12" *ngFor="let data of user">
         <h3>Name: {{data.fname}}</h3>
         <h4>Age: {{data.lname}}</h4>
@@ -22,4 +19,28 @@
         <hr>
 
     </div>
-</div>
+</div> -->
+
+<h2> Employee List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> First Name</th>
+            <th> Last Name </th>
+            <th> Email Id</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let employee of user" >
+            <td> {{ employee.firstName }} </td>
+            <td> {{ employee.lastName }} </td>
+            <td> {{ employee.emailId }} </td>
+            <td>
+                <button (click) = "update()" class = "btn btn-info"> Update</button>
+                <button (click) = "update" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "update" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

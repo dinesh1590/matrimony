@@ -48,6 +48,7 @@ import { Usr } from '../usr';
 
   `,
   styles: [
+    
   ]
 })
 export class NotFoundComponent implements OnInit {
@@ -60,7 +61,6 @@ export class NotFoundComponent implements OnInit {
 
   }
 
-  
   
   saveEmployee(){
       this.goToEmployeeList();

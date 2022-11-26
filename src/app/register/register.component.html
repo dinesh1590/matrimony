@@ -17,19 +17,7 @@
 
     </div>
   
-    <div class="form-group">
-      <label for="email" class="block">Email</label>
-    <input type="text" [class.is-invalid]="email.invalid && email.touched" pInputText [(ngModel)]="us.emailId" name="email" #email="ngModel" class="form-control" required placeholder="Email"> 
-    <small [class.d-none]="email.valid || email.untouched">email is required</small> 
-    </div>
-    
-  
-    <div class="form-group">
-      <label for="password">Password</label>
-      <p-password type="password" [(ngModel)]="us.password"  [class.is-invalid]="pass.invalid && pass.touched" name="password"  #pass="ngModel" class="form-control" required placeholder="Password"></p-password>
-      <small [class.d-none]="pass.valid || pass.untouched">password is required</small> 
 
-    </div>
   
     
     <div class="form-group">

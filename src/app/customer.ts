@@ -1,4 +1,4 @@
-export class User {
+export class Customer {
 
     firstName: string;
     lastName: string;
@@ -7,5 +7,5 @@ export class User {
     gender:string;
     dob:Date;
     location:string;
-
+    acceptTerms:boolean;
 }

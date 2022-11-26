@@ -34,11 +34,9 @@ import { DisplayComponent } from './display/display.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
-import { SearchComponent } from './search/search.component';
 
 import {RouterModule} from '@angular/router';
 
-import { ProductService } from './productservice';
 
 import {TableModule} from 'primeng/table';
 import {ToastModule} from 'primeng/toast';
@@ -49,6 +47,8 @@ import {DialogModule} from 'primeng/dialog';
 import {ProgressBarModule} from 'primeng/progressbar';
 import {RatingModule} from 'primeng/rating';
 import { FooterComponent } from './footer/footer.component';
+import { DisplayCustomerComponent } from './display-customer/display-customer.component';
+import { ViewComponent } from './view/view.component';
 
 @NgModule({
   declarations: [
@@ -60,8 +60,9 @@ import { FooterComponent } from './footer/footer.component';
     RegisterComponent,
     HomeComponent,
     BannerComponent,
-    SearchComponent,
     FooterComponent,
+    DisplayCustomerComponent,
+    ViewComponent,
     
   ],
   imports: [
@@ -100,7 +101,7 @@ import { FooterComponent } from './footer/footer.component';
 		])
     
   ],
-  providers: [UserService,ProductService],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

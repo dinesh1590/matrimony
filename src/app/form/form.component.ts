@@ -7,6 +7,8 @@ import {
   FormControl,
   Validators,
 } from '@angular/forms';
+import { UserService } from '../user.service';
+import { Usr } from '../usr';
 import Validation from '../validation';
 
 
@@ -30,7 +32,7 @@ export class FormComponent implements OnInit {
   });
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder,private _usr: UserService) {}
 
   ngOnInit(): void {
     this.form = this.formBuilder.group(
@@ -62,6 +64,8 @@ export class FormComponent implements OnInit {
     );
   }
 
+  user:Usr;
+
   get f(): { [key: string]: AbstractControl } {
     return this.form.controls;
   }
@@ -74,6 +78,17 @@ export class FormComponent implements OnInit {
     }
 
     console.log(JSON.stringify(this.form.value, null, 2));
+
+
+    this.user.fname=this.form.value.firstName;
+    this.user.lname=this.form.value.username;
+    this.user.email=this.form.value.email;
+    this.user.password=this.form.value.password;
+
+  
+console.log(this.user)
+
+    this._usr.createEmployee(this.user);
   }
 
   onReset(): void {
