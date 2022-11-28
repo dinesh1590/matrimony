@@ -1,12 +1,13 @@
 <html>
-  <body >
-       <h1 >MATRIMONY REGISTARTION FORM</h1>
-        
+  <body class="bb">
 
-<p-card styleClass="user-form" class="flex justify-content-center" >
+    <h2>MATRIMONY REGISTARTION FORM</h2>
+    
+<p-card styleClass="user-form" class="flex justify-content-center"  [style]="{width: '25vw'}">
 <div class="register-form">
 <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
-         
+
+  <div  class="form">
 <div class="form-group" >
           <label>First name  :</label>
           <br>
@@ -47,7 +48,7 @@
 <div class="form-group">
                <label for="gender">Gender:</label>
          <div>
-               <input id="male" type="radio" value="male" name="gender"   formControlName="gender">
+               <input id="male" type="radio" value="male" name="gender" checked formControlName="gender" >
                <label for="male">Male</label>
          </div>
          <div>
@@ -61,7 +62,7 @@
 
 <div class="form-group">        
                <label for="date">Date Of Birth</label><br>
-               <p-calendar inputId="date" value="bb" name="dob"  formControlName="dob"></p-calendar>
+               <p-calendar class="dob" inputId="date" value="dob" name="dob"  formControlName="dob"></p-calendar>
         <div>
                <small class="p-error block"  *ngIf="userForm.get('dob')?.invalid && userForm.get('dob').dirty">dob should be valid</small>
         </div>
@@ -83,23 +84,21 @@
     <input
       type="checkbox"
       formControlName="acceptTerms"
-      class="form-check-input"
-     
-    />
-    <label for="acceptTerms" class="form-check-label"
-      >I have read and agree to the Terms</label
-    >
-    <div
+      class="form-check-input"/>
       
-    >
-      Accept Terms is required
-    </div>
+    <label for="acceptTerms" class="form-check-label">I have read and agree to the Terms</label>
+
   </div>
 
 <div class="form-group">
-<button pButton type="submit" label="Click" [disabled]="userForm.invalid"></button>
+  <button pButton type="submit" label="Register" [disabled]="userForm.invalid"></button>
+  
+  <button pButton type="submit" label="Cancel"   class="p-button-secondary" (click)="back()"></button>
+
 </div>
 
+
+</div>
 </form>
 </div>
 </p-card>

@@ -1,17 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { MessageService } from 'primeng/api';
 import { Customer } from '../customer';
 import { CustomerService } from '../customer.service';
 
 @Component({
   selector: 'app-newform',
   templateUrl: './newform.component.html',
-  styleUrls: ['./newform.component.scss']
+  styleUrls: ['./newform.component.scss'],
+  providers: [MessageService]
+
 })
 export class NewformComponent implements OnInit {
  
-constructor(private fb:FormBuilder,private service:CustomerService, private router: Router) {}
+constructor(private fb:FormBuilder,private service:CustomerService, private router: Router,private messageService: MessageService) {}
 
   userForm: FormGroup = new FormGroup({
 
@@ -49,10 +52,15 @@ ngOnInit(): void {
   );
 }
 
+
 City: any = ['Mumbai', 'Hyderabad', 'Chennai', 'Bengaluru','Delhi','Kolkata','Lucknow','Pune','Jaipur','Patna'];
 
 submitted = false;
 
+
+showSuccess() {
+  this.messageService.add({severity:'success', summary: 'Success', detail: 'Message Content'});
+}
 
 
 
@@ -78,11 +86,9 @@ goToEmployeeList() {
 this.router.navigate(['/customerlist']);
 }
 
-
-
-
-
-
+back() {
+  this.router.navigate(['/home'])
+}
 }
 
 

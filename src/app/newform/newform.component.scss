@@ -1,8 +1,41 @@
-h1 {
+h2 {
     text-align: center;
-    color: black;
-    background-color: antiquewhite;
+    color: white;
+    background-color: #0e5ea2;
+
 }
+
+.form {
+width: 100% ;
+
+margin-bottom: 10px;
+
+}
+
+.bb {
+background-color:aliceblue;
+background-attachment: fixed;
+background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+}
+
+.hh {
+    display: flex;
+    justify-content: center;  
+    
+}
+
+.p-button-secondary {
+    margin-left: 180px;
+}
+
+.p-button {
+    background-color: #0e5ea2;
+}
+
+
 
 
 

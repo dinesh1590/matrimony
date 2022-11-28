@@ -14,28 +14,35 @@ export class DisplayCustomerComponent implements OnInit {
 
   public user=[];
 
-
   constructor(private _usr:CustomerService,private router: Router) {
     
    }
 
+
+
   ngOnInit(): void {
 
-    console.log(this._usr.data);
+
   this.data=this._usr.data;
- this.getEmployees();
+
+  if(this.data.email!=null) {
+    this.isValid=true;
   }
+   this.getEmployees();
+
+  }
+
+  public isValid:boolean=false;
 
 
   private getEmployees() {
     this._usr.getCustomersList().subscribe(data => this.user=data)
-    
   }
 
  
 
 update() {
-  this.router.navigate(['/newform']);
+  this.router.navigate(['/update']);
 }
 
 view() {

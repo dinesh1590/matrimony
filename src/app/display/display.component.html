@@ -1,46 +1,71 @@
-
-
-<!-- <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12" *ngFor="let data of user">
-        <h3>Name: {{data.fname}}</h3>
-        <h4>Age: {{data.lname}}</h4>
-        <h5>Email: {{data.email}}</h5>
-        <h4>Password :{{data.password}}</h4>
-        <hr>
-
-    </div>
+<div  class="dis1">
+<p-inplace>
+    <ng-template pTemplate="display">
+        <div class="inline-flex align-items-center">
+            <span class="pi pi-image" style="vertical-align: middle"></span>
+            <span class="ml-2">View Picture</span>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="content">
+        <img src="https://cdn.pixabay.com/photo/2015/12/09/01/02/mandalas-1084082__340.jpg" alt="Nature">
+    </ng-template>
+</p-inplace>
+<p-inplace>
+    <ng-template pTemplate="display">
+        <div class="inline-flex align-items-center">
+            <span class="pi pi-image" style="vertical-align: middle"></span>
+            <span class="ml-2">View Picture</span>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="content">
+        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt="Nature">
+    </ng-template>
+</p-inplace>
+<p-inplace>
+    <ng-template pTemplate="display">
+        <div class="inline-flex align-items-center">
+            <span class="pi pi-image" style="vertical-align: middle"></span>
+            <span class="ml-2">View Picture</span>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="content">
+        <img src="https://cdn.pixabay.com/photo/2016/10/18/21/22/beach-1751455__340.jpg" alt="Nature">
+    </ng-template>
+</p-inplace>
 </div>
-<div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-        <h3>Name: {{data.fname}}</h3>
-        <h4>Age: {{data.lname}}</h4>
-        <h5>Email: {{data.email}}</h5>
-        <h4>Password :{{data.password}}</h4>
-        <hr>
 
-    </div>
-</div> -->
-
-<h2> Employee List</h2>
-<table class = "table table-striped">
-    <thead>
-        <tr>
-            <th> First Name</th>
-            <th> Last Name </th>
-            <th> Email Id</th>
-            <th> Actions </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor = "let employee of user" >
-            <td> {{ employee.firstName }} </td>
-            <td> {{ employee.lastName }} </td>
-            <td> {{ employee.emailId }} </td>
-            <td>
-                <button (click) = "update()" class = "btn btn-info"> Update</button>
-                <button (click) = "update" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
-                <button (click) = "update" class = "btn btn-info" style="margin-left: 10px"> View</button>
-            </td>
-        </tr>
-    </tbody>
-</table>
+<div class="dis2">
+<p-inplace>
+    <ng-template pTemplate="display">
+        <div class="inline-flex align-items-center">
+            <span class="pi pi-image" style="vertical-align: middle"></span>
+            <span class="ml-2">View Picture</span>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="content">
+        <img src="https://cdn.pixabay.com/photo/2016/04/18/22/05/seashells-1337565__340.jpg" alt="Nature">
+    </ng-template>
+</p-inplace>
+<p-inplace>
+    <ng-template pTemplate="display">
+        <div class="inline-flex align-items-center">
+            <span class="pi pi-image" style="vertical-align: middle"></span>
+            <span class="ml-2">View Picture</span>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="content">
+        <img src="https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547__340.jpg" alt="Nature">
+    </ng-template>
+</p-inplace>
+<p-inplace>
+    <ng-template pTemplate="display">
+        <div class="inline-flex align-items-center">
+            <span class="pi pi-image" style="vertical-align: middle"></span>
+            <span class="ml-2">View Picture</span>
+        </div>
+    </ng-template>
+    <ng-template pTemplate="content">
+        <img src="https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073__340.jpg" alt="Nature">
+    </ng-template>
+</p-inplace>
+</div>

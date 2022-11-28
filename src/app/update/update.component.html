@@ -1,0 +1,43 @@
+<h2>MATRIMONY UPDATE FORM</h2>
+
+
+<p-card styleClass="user-form" class="flex justify-content-center" [style]="{width: '25vw'}" >
+    <div class="register-form">
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+<div class="form-group" >
+    <label>First name  :</label>
+    <br>
+    <input type="text"  formControlName="firstName"  pInputText class="form-control" />
+<div>
+    <small class="p-error block"  *ngIf="userForm.get('firstName')?.invalid && userForm.get('firstName').dirty">firstname is required</small>
+</div>
+</div>
+
+<div class="form-group">        
+  <label>Last name :</label><br>
+  <input type="text"  formControlName="lastName"  pInputText class="form-control" />
+<div>
+  <small class="p-error block"  *ngIf="userForm.get('lastName')?.invalid && userForm.get('lastName').dirty">lastname should be valid</small>
+</div>
+</div>
+
+<div class="form-group">        
+ <label>Email :</label><br>
+  <input type="text"  formControlName="email"  pInputText class="form-control" />
+<div>
+  <small class="p-error block"  *ngIf="userForm.get('email')?.invalid && userForm.get('email').dirty">email should be valid</small>
+</div>
+</div>
+
+<div class="form-group" >
+    
+    <button pButton type="submit" label="Update" [disabled]="userForm.invalid"></button>
+    <button pButton type="button" label="Cancel" (click)="back()" class="cancel" ></button>
+     
+</div>
+
+
+</form>
+</div>
+</p-card>
+       

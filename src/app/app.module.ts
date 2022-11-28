@@ -38,6 +38,7 @@ import { BannerComponent } from './banner/banner.component';
 import {RouterModule} from '@angular/router';
 
 
+import {InplaceModule} from 'primeng/inplace';
 import {TableModule} from 'primeng/table';
 import {ToastModule} from 'primeng/toast';
 import {SliderModule} from 'primeng/slider';
@@ -49,6 +50,8 @@ import {RatingModule} from 'primeng/rating';
 import { FooterComponent } from './footer/footer.component';
 import { DisplayCustomerComponent } from './display-customer/display-customer.component';
 import { ViewComponent } from './view/view.component';
+import { UpdateComponent } from './update/update.component';
+
 
 @NgModule({
   declarations: [
@@ -63,6 +66,7 @@ import { ViewComponent } from './view/view.component';
     FooterComponent,
     DisplayCustomerComponent,
     ViewComponent,
+    UpdateComponent,
     
   ],
   imports: [
@@ -95,6 +99,7 @@ import { ViewComponent } from './view/view.component';
     SliderModule,
     ToastModule,
     RouterModule,
+    InplaceModule,
     RouterModule.forRoot([
       {path:'',component: AppComponent}
 

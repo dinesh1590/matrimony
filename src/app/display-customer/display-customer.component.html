@@ -14,24 +14,26 @@
             <td> {{ data.lastName }} </td>
             <td> {{ data.email}} </td>
             <td>
-                <button (click) = "update()" class = "btn btn-info"> Update</button>
-                <button (click) = "view()" class = "btn btn-info" style="margin-left: 10px"> View</button>
+                <span class="p-buttonset">
+                    <button pButton type="button"  [disabled]="true" label="Update  " (click) = "update()"></button>
+                    <button pButton type="button"  [disabled]="true" label="View"  (click) = "view()"></button>
+                </span>
+                
             </td>
         </tr>
-    </tbody>
-    <tbody>
+        <tr  *ngIf="isValid">
             <td> {{ data.firstName }} </td>
             <td> {{ data.lastName }} </td>
             <td> {{ data.email}} </td>
             <td>
-                <button (click) = "update()" class = "btn btn-info"> Update</button>
-                <button (click) = "view()" class = "btn btn-info" style="margin-left: 10px"> View</button>
+                <span class="p-buttonset">
+                    <button pButton type="button"   label="Update" (click) = "update()"></button>
+                    <button pButton type="button"   label="View"  (click) = "view()"></button>
+                </span>
             </td>
-        
+        </tr>
     </tbody>
-    
 </table>
-
 
 
 

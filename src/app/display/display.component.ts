@@ -9,42 +9,7 @@ import { Usr } from '../usr';
   styleUrls: ['./display.component.scss']
 })
 
-export class DisplayComponent implements OnInit {
+export class DisplayComponent {
 
-  public data:Usr;
-
-  public user=[];
-
-
-
-  constructor(private _usr:UserService,private router: Router) {
-    
-   }
-
-  ngOnInit(): void {
-   
- this.getEmployees();
-  }
-
-
-
-
-
-  private getEmployees() {
-    this._usr.getEmployeesList().subscribe(data => {this.user=data});
-
-    this.data=this._usr.hh;
-  }
-
-
-
-  employees: Usr[];
-
-
-update() {
-  this.router.navigate(['/ghg']);
+  
 }
-
-
-}
-

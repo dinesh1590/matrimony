@@ -1,0 +1,14 @@
+.imagebody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left, #28b487, #7dd56f);
+    height: 81vh;
+    background-attachment: fixed;
+  }
+  .content {
+    font-family: sans-serif;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+  }

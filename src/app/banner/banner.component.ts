@@ -19,7 +19,7 @@ export class BannerComponent implements OnInit {
         this.items = [
             {
                 label:'Home',
-                routerLink:['/home'],
+                routerLink:['home'],
                 icon:'pi pi-fw pi-home',
             },
            
@@ -29,19 +29,19 @@ export class BannerComponent implements OnInit {
                 items:[
                     {
                         label:'Register',
-                        routerLink:['/form'],
+                        routerLink:['/newform'],
                         icon:'pi pi-fw pi-user-plus',
 
                     },
                     {
-                        label:'Search',
-                        routerLink:['/search'],
+                        label:'Photos',
+                        routerLink:['/photos'],
                         icon:'pi pi-fw pi-search',
                         
                     },
                     {
                         label:'Display',
-                        routerLink:['/display'],
+                        routerLink:['/customerlist'],
                         icon:'pi pi-fw pi-users',
                     }
                 ]
@@ -51,29 +51,9 @@ export class BannerComponent implements OnInit {
                 icon:'pi pi-fw pi-calendar',
                 items:[
                     {
-                        label:'Edit',
-                        icon:'pi pi-fw pi-pencil',
-                        items:[
-                        {
-                            label:'Save',
-                            icon:'pi pi-fw pi-calendar-plus'
-                        },
-                        {
-                            label:'Delete',
-                            icon:'pi pi-fw pi-calendar-minus'
-                        },
-
-                        ]
-                    },
-                    {
-                        label:'Archieve',
+                        label:'business',
+                        routerLink:['business'],
                         icon:'pi pi-fw pi-calendar-times',
-                        items:[
-                        {
-                            label:'Remove',
-                            icon:'pi pi-fw pi-calendar-minus'
-                        }
-                        ]
                     }
                 ]
             },

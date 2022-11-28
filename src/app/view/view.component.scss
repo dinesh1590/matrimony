@@ -1,0 +1,57 @@
+.dd {
+    text-align: center;
+    background-color: aliceblue;
+
+
+     padding-left: 5%;
+     padding-right: 20%;
+     
+
+}
+
+button {
+    min-width: 10rem;
+    margin-right: .5rem;
+}
+
+@media screen and (max-width: 960px) {
+    button {
+        width: 100%;
+        margin-bottom: .5rem;
+    }
+}
+label {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    clear: both;
+   }
+
+.button {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+b {
+    color: green;
+
+   border: 100%;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    background-color: #0e5ea2;
+
+}
+
+.p-button {
+    background-color: #0e5ea2;
+}
+

@@ -1,4 +1,8 @@
-<h3> View Customer Details</h3>
+
+<p-toast></p-toast>
+<h2> View Customer Details</h2>
+<div class="dd">
+
 <div>
     <div>
         <label> <b> First Name : </b></label> {{customer.firstName}}
@@ -13,7 +17,7 @@
         <label> <b> Gender : </b></label> {{customer.gender}}
     </div>
     <div>
-        <label> <b> Date of Birth : </b></label> {{customer.dob | date:"MM/dd/yy"}}
+        <label> <b> Date of Birth : </b></label> {{customer.dob | date:"MM/dd/yyyy"}}
     </div>
     <div>
         <label> <b> Phone Number : </b></label> {{customer.phone}}
@@ -22,3 +26,7 @@
         <label> <b> Location : </b></label> {{customer.location}}
     </div>
 </div>
+</div>
+<div  class="button">
+<button type="button" pButton pRipple (click)="showSuccess()" label="Back"></button>
+<button type="button" pButton pRipple (click)="showError()" label="Edit" class="p-button-info"></button></div>

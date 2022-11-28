@@ -1,17 +1,9 @@
 [
-    {"firstName":"dinesh","lastName":"reddy","email":"dinesh@gmail","phone":"8309266781","gender":"male","dob":"23-02-1999","location":"hyderabad"},
-    {"firstName":"ramya","lastName":"reddy","email":"ramya@gmail.com","phone":"1234567890","gender":"female","dob":"23-09-1999","location":"banglore"},
-    {"firstName":"prabhas","lastName":"raju","email":"prabhas@gmail.com","phone":"9874561230","gender":"male","dob":"23-10-1980","location":"chennai"},
-    {
-  "firstName": "dinesh",
-  "lastName": "reddy",
-  "email": "dinssh@gmail.com",
-  "phone": "8898997978",
-  "gender": "male",
-  "dob": "2022-11-13T18:30:00.000Z",
-  ",location": "Jaipur"
-},
-{"firstName":"ramya","lastName":"reddy","email":"ramya@gmail.com","phone":"1234567890","gender":"female","dob":"23-09-1999","location":"banglore"}
+    {"firstName":"dinesh","lastName":"danny","email":"dinesh@gmail","phone":"8309266781","gender":"male","dob":"23-02-1999","location":"hyderabad"},
+    {"firstName":"ramya","lastName":"rowdy","email":"ramya@gmail.com","phone":"1234567890","gender":"female","dob":"23-09-1999","location":"banglore"},
+    {"firstName":"vittal","lastName":"valter","email":"vattal@gmail.com","phone":"9874561230","gender":"male","dob":"23-10-1980","location":"chennai"},
+    {"firstName":"Niharika","lastName":"nippu","email":"niharika@gmail.com","phone":"1234567890","gender":"female","dob":"23-09-1999","location":"banglore"},
+    {"firstName":"karim","lastName":"kathi","email":"karim@gmail.com","phone":"1234567890","gender":"male","dob":"23-09-1999","location":"banglore"}
 
 ]
 
