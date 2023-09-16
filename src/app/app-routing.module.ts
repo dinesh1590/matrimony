@@ -24,6 +24,7 @@ const routes: Routes = [
   {path:'customerlist',component: DisplayCustomerComponent},
   {path:'newform',component: NewformComponent},
   {path:'view',component: ViewComponent},
+ 
   {path:'',redirectTo:'/home', pathMatch:'full'},
 
   { path: 'business', loadChildren: () => import('./business/business.module').then(m => m.BusinessModule) },

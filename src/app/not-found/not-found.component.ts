@@ -9,8 +9,6 @@ import { Usr } from '../usr';
   template: `
 
   <h1>oops page not found : 404 error</h1>
-  
-
 
 
   `,
@@ -37,9 +35,6 @@ export class NotFoundComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
-  
-  
 }
 
 

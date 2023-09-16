@@ -18,8 +18,6 @@ export class DisplayCustomerComponent implements OnInit {
     
    }
 
-
-
   ngOnInit(): void {
 
 

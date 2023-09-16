@@ -36,8 +36,6 @@ import { HomeComponent } from './home/home.component';
 import { BannerComponent } from './banner/banner.component';
 
 import {RouterModule} from '@angular/router';
-
-
 import {InplaceModule} from 'primeng/inplace';
 import {TableModule} from 'primeng/table';
 import {ToastModule} from 'primeng/toast';
